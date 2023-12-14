@@ -1,0 +1,201 @@
+@import url(fonts.css);
+@keyframes slideLeft {
+    from {
+      bottom: -50px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+}
+
+div.title {
+    text-align: center;
+    position: relative;
+    font-size: calc(10px + 2vmin);
+}
+
+div.page{
+  color: white;
+}
+
+body {
+  background-color: #1F1F1F;
+  overflow-x: hidden;
+}
+
+.fade-in-bottom {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInBottom 1s forwards;
+  }
+  
+  @keyframes fadeInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.left {
+    position: relative;
+    left: 30px;
+    font-size: larger;
+}
+
+.buttoncenter{
+  position: relative;
+  left: 46%;
+}
+
+.raisedButton {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  font-family: 'Roboto';
+}
+
+.raisedButton:hover {
+  background-color: #303f9f;
+}
+
+.myDiv3 {
+  border-radius: 25px;
+  background-color: #28292A;
+  padding: 20px;
+  width: 500px;
+  height: 350px;
+}
+
+.myDiv4{
+  border-radius: 25px;
+  background-color: #222324;
+  padding: 20px;
+  width: 590px;
+  height: 370px;
+}
+
+h1{
+  font-family: 'Roboto-Medium';
+  color: #E3E3E3;
+}
+
+.top-halff {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27%;
+  height: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #000; /* Set a background color for the top half */
+}
+
+.btm-txt{
+  font-family: 'Roboto';
+  position: absolute;
+  top: 70px; /* Adjust the distance from the bottom as needed */
+  left: 190px;
+  width: 100%;
+  text-align: left;
+  margin-left: 30px;
+  color: #E3E3E3;
+  font-size: large;
+}
+
+.btm-ttl{
+  font-family: 'Roboto-Medium';
+  position: absolute;
+  top: 25px; /* Adjust the distance from the bottom as needed */
+  left: 190px;
+  width: 100%;
+  text-align: left;
+  margin-left: 30px;
+  color: #E3E3E3;
+  font-size: x-large;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fab {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #222324;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+
+@keyframes fabanimation{
+  from{
+    background-color: #222324;
+  }
+  to{
+    background-color: #004A77;
+  }
+}
+
+@keyframes fabanimation2{
+  from{
+    background-color: #004A77;
+    }
+  to{
+    background-color: #222324;
+  }
+}
+
+.icon{
+  fill: #C2E7FF;
+}
+
+.fab:hover{
+  animation: fabanimation ease 0.5s forwards;
+}
+
+.fab:not(:hover){
+  animation: fabanimation2 ease 0.5s forwards;
+}
+
+
+.btm-txt2{
+  font-family: 'Roboto';
+  position: absolute;
+  top: 370px; /* Adjust the distance from the bottom as needed */
+  left: 20px;
+  width: 100%;
+  text-align: left;
+  margin-left: 30px;
+  color: #E3E3E3;
+  font-size: large;
+}
+
+.btm-ttl2{
+  font-family: 'Roboto-Medium';
+  position: absolute;
+  top: 325px; /* Adjust the distance from the bottom as needed */
+  left: 20px;
+  width: 100%;
+  text-align: left;
+  margin-left: 30px;
+  color: #E3E3E3;
+  font-size: x-large;
+}
